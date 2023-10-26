@@ -1,5 +1,7 @@
 # 🧑‍💻 Food Truck Data, Batch Processing Pipeline
 
+Coursework: an ETL pipeline, deployed using ECS, which processes 'food truck' transaction data (from S3) in batches. Cleaned data is loaded to a database, then queried daily (automated by AWS Lambda) to send out email reports.
+
 ## Pipeline
 
 1. Navigate to the `/pipeline` directory
