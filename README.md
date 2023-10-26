@@ -22,19 +22,25 @@ DB_SCHEMA=XXX
 ```
 
 4. Running `pipeline.py` will download and clean the latest batch of data, before loading it into the remote database
-5. The Dockerfile can build an image of the pipeline application, suitable for registry in ECR, and subsequent ECS deployment
+5. The `Dockerfile` can build an image of the pipeline application, suitable for registry in ECR, and subsequent ECS deployment
 
-## Report generation
+## Report Generation
 
-In this Repository you will find all of the materials for this week of the course.
+1. Navigate to the `/lambda reports` directory
+2. Run `pip3 install requirements.txt`
+3. Create a `.env` file and populate it with the following keys:
 
-As well as your coursework files you'll find some additional files
+```
+ACCESS_KEY_ID=XXX
+SECRET_ACCESS_KEY=XXX
+BUCKET_NAME=XXX
+DB_HOST=XXX
+DB_PORT=XXX
+DB_NAME=XXX
+DB_USER=XXX
+DB_PASSWORD=XXX
+DB_SCHEMA=XXX
+```
 
-- `README.md`
-  - This is the file you are currently reading
-- `.gitignore`
-  - This file is used to tell Git what files to ignore for any changes. This can be safely ignored.
-- `.prettierrc`
-  - This file is used to configure Prettier, an automated formatter that we suggest you install. This can be safely ignored.
-- `.eslintrc.json` and `pylintrc`
-  - Used to ensure that your code is following good style guides
+4. Running `lambda_function.py` will query the database to calculate key metrics, then use these to populate an HTML report file
+5. The `Dockerfile` can build an image of the report generation application, suitable to be deployed with AWS Lambda
