@@ -1,20 +1,20 @@
-<svg width="145.2" height="30" viewBox="0 0 968 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Total Errors:: 6">
-  <title>Total Errors:: 6</title>
+<svg width="155.7" height="30" viewBox="0 0 1038 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Total Errors:: 70">
+  <title>Total Errors:: 70</title>
   <linearGradient id="a" x2="0" y2="100%">
     <stop offset="0" stop-opacity=".1" stop-color="#EEE"/>
     <stop offset="1" stop-opacity=".1"/>
   </linearGradient>
-  <mask id="m"><rect width="968" height="200" rx="30" fill="#FFF"/></mask>
+  <mask id="m"><rect width="1038" height="200" rx="30" fill="#FFF"/></mask>
   <g mask="url(#m)">
     <rect width="798" height="200" fill="#555"/>
-    <rect width="170" height="200" fill="#08C" x="798"/>
-    <rect width="968" height="200" fill="url(#a)"/>
+    <rect width="240" height="200" fill="#08C" x="798"/>
+    <rect width="1038" height="200" fill="url(#a)"/>
   </g>
   <g aria-hidden="true" fill="#fff" text-anchor="start" font-family="Verdana,DejaVu Sans,sans-serif" font-size="110">
     <text x="60" y="148" textLength="698" fill="#000" opacity="0.25">Total Errors:</text>
     <text x="50" y="138" textLength="698">Total Errors:</text>
-    <text x="853" y="148" textLength="70" fill="#000" opacity="0.25">6</text>
-    <text x="843" y="138" textLength="70">6</text>
+    <text x="853" y="148" textLength="140" fill="#000" opacity="0.25">70</text>
+    <text x="843" y="138" textLength="140">70</text>
   </g>
   
 </svg>

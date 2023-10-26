@@ -1,29 +1,123 @@
 {
  "files": [
   {
-   "file_name": "./pipeline/load.py",
+   "file_name": "./pipeline/transform.py",
    "errors": [
-    "pipeline/load.py:1:0: W0612: Unused variable 'redshift_connector' (unused-variable)",
-    "pipeline/load.py:1:0: W0611: Unused import redshift_connector (unused-import)"
+    "pipeline/transform.py:2:0: W0612: Unused variable 'pq' (unused-variable)",
+    "pipeline/transform.py:5:0: W0612: Unused variable 'pytz' (unused-variable)",
+    "pipeline/transform.py:4:0: W0612: Unused variable 'datetime' (unused-variable)",
+    "pipeline/transform.py:4:0: W0612: Unused variable 'timedelta' (unused-variable)",
+    "pipeline/transform.py:4:0: W0612: Unused variable 'timezone' (unused-variable)",
+    "pipeline/transform.py:2:0: W0611: Unused pyarrow.parquet imported as pq (unused-import)",
+    "pipeline/transform.py:4:0: W0611: Unused datetime imported from datetime (unused-import)",
+    "pipeline/transform.py:4:0: W0611: Unused timedelta imported from datetime (unused-import)",
+    "pipeline/transform.py:4:0: W0611: Unused timezone imported from datetime (unused-import)",
+    "pipeline/transform.py:5:0: W0611: Unused import pytz (unused-import)"
    ],
-   "score": 60.0
+   "score": 85.7
   },
   {
    "file_name": "./pipeline/extract.py",
    "errors": [
-    "pipeline/extract.py:1:0: W0612: Unused variable 'client' (unused-variable)",
-    "pipeline/extract.py:1:0: W0611: Unused client imported from boto3 (unused-import)"
+    "pipeline/extract.py:14:30: C0103: Argument name \"s3\" doesn't conform to '(?:(?P<snake_case>[a-z_]+)|(?P<UPPER_CASE>[A-Z_]+)|(?P<PascalCase>[^a-z][A-Za-z]+)|(?P<camelCase>[^A-Z][A-Za-z]+))$' pattern (invalid-name)",
+    "pipeline/extract.py:39:28: C0103: Argument name \"s3\" doesn't conform to '(?:(?P<snake_case>[a-z_]+)|(?P<UPPER_CASE>[A-Z_]+)|(?P<PascalCase>[^a-z][A-Za-z]+)|(?P<camelCase>[^A-Z][A-Za-z]+))$' pattern (invalid-name)",
+    "pipeline/extract.py:46:30: C0103: Argument name \"s3\" doesn't conform to '(?:(?P<snake_case>[a-z_]+)|(?P<UPPER_CASE>[A-Z_]+)|(?P<PascalCase>[^a-z][A-Za-z]+)|(?P<camelCase>[^A-Z][A-Za-z]+))$' pattern (invalid-name)"
    ],
-   "score": 60.0
+   "score": 91.9
   },
   {
-   "file_name": "./pipeline/transform.py",
+   "file_name": "./pipeline/test_extract.py",
    "errors": [
-    "pipeline/transform.py:1:0: W0612: Unused variable 'pd' (unused-variable)",
-    "pipeline/transform.py:1:0: W0611: Unused pandas imported as pd (unused-import)"
+    "pipeline/pipeline.py:30:16: W0622: Redefining built-in 'dir' (redefined-builtin)",
+    "pipeline/pipeline.py:94:4: W0612: Unused variable 'truck_data_excel_file' (unused-variable)",
+    "pipeline/pipeline.py:2:0: W0612: Unused variable 'dotenv_values' (unused-variable)",
+    "pipeline/pipeline.py:17:0: W0612: Unused variable 'populate_dim_trucks' (unused-variable)",
+    "pipeline/pipeline.py:2:0: W0611: Unused dotenv_values imported from dotenv (unused-import)",
+    "pipeline/pipeline.py:17:0: W0611: Unused populate_dim_trucks imported from load (unused-import)"
    ],
-   "score": 60.0
+   "score": 88.0
+  },
+  {
+   "file_name": "./pipeline/load.py",
+   "errors": [
+    "pipeline/load.py:12:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)",
+    "pipeline/load.py:57:12: W0612: Unused variable 'index' (unused-variable)",
+    "pipeline/load.py:1:0: W0612: Unused variable 'redshift_connector' (unused-variable)",
+    "pipeline/load.py:5:0: W0612: Unused variable 'pyarrow' (unused-variable)",
+    "pipeline/load.py:80:0: W0612: Unused variable 'populate_dim_types' (unused-variable)",
+    "pipeline/load.py:100:0: W0612: Unused variable 'populate_fact_transactions' (unused-variable)",
+    "pipeline/load.py:149:4: W0612: Unused variable 'historical_parquet_file' (unused-variable)",
+    "pipeline/load.py:151:4: W0612: Unused variable 'combined_batch_data_file' (unused-variable)",
+    "pipeline/load.py:1:0: W0611: Unused import redshift_connector (unused-import)",
+    "pipeline/load.py:5:0: W0611: Unused import pyarrow (unused-import)"
+   ],
+   "score": 86.7
+  },
+  {
+   "file_name": "./dashboard/dashboarding_from_db.py",
+   "errors": [
+    "dashboard/dashboarding_from_db.py:86:4: W0612: Unused variable 'truck_ids' (unused-variable)",
+    "dashboard/dashboarding_from_db.py:132:8: W0622: Redefining built-in 'id' (redefined-builtin)"
+   ],
+   "score": 98.0
+  },
+  {
+   "file_name": "./lambda reports/lambda_function.py",
+   "errors": [
+    "lambda reports/lambda_function.py:79:0: C0301: Line too long (190/150) (line-too-long)",
+    "lambda reports/lambda_function.py:141:19: W0613: Unused argument 'event' (unused-argument)",
+    "lambda reports/lambda_function.py:141:26: W0613: Unused argument 'context' (unused-argument)",
+    "lambda reports/lambda_function.py:1:0: W0612: Unused variable 'json' (unused-variable)",
+    "lambda reports/lambda_function.py:3:0: W0612: Unused variable 'redshift_connector' (unused-variable)",
+    "lambda reports/lambda_function.py:141:0: W0612: Unused variable 'lambda_handler' (unused-variable)",
+    "lambda reports/lambda_function.py:4:0: W0612: Unused variable 'Connection' (unused-variable)",
+    "lambda reports/lambda_function.py:7:0: W0612: Unused variable 'dotenv_values' (unused-variable)",
+    "lambda reports/lambda_function.py:1:0: W0611: Unused import json (unused-import)",
+    "lambda reports/lambda_function.py:3:0: W0611: Unused import redshift_connector (unused-import)",
+    "lambda reports/lambda_function.py:4:0: W0611: Unused Connection imported from redshift_connector (unused-import)",
+    "lambda reports/lambda_function.py:7:0: W0611: Unused dotenv_values imported from dotenv (unused-import)"
+   ],
+   "score": 75.5
+  },
+  {
+   "file_name": "./lambda reports/daily_report_queries_to_json.py",
+   "errors": [
+    "lambda reports/daily_report_queries_to_json.py:82:0: C0301: Line too long (190/150) (line-too-long)",
+    "lambda reports/daily_report_queries_to_json.py:129:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)",
+    "lambda reports/daily_report_queries_to_json.py:2:0: W0612: Unused variable 'redshift_connector' (unused-variable)",
+    "lambda reports/daily_report_queries_to_json.py:5:0: W0612: Unused variable 'pd' (unused-variable)",
+    "lambda reports/daily_report_queries_to_json.py:113:4: W0612: Unused variable 'total_transaction_value_for_all_trucks' (unused-variable)",
+    "lambda reports/daily_report_queries_to_json.py:1:0: W0612: Unused variable 'client' (unused-variable)",
+    "lambda reports/daily_report_queries_to_json.py:3:0: W0612: Unused variable 'Connection' (unused-variable)",
+    "lambda reports/daily_report_queries_to_json.py:4:0: W0612: Unused variable 'dotenv_values' (unused-variable)",
+    "lambda reports/daily_report_queries_to_json.py:1:0: W0611: Unused client imported from boto3 (unused-import)",
+    "lambda reports/daily_report_queries_to_json.py:2:0: W0611: Unused import redshift_connector (unused-import)",
+    "lambda reports/daily_report_queries_to_json.py:3:0: W0611: Unused Connection imported from redshift_connector (unused-import)",
+    "lambda reports/daily_report_queries_to_json.py:4:0: W0611: Unused dotenv_values imported from dotenv (unused-import)",
+    "lambda reports/daily_report_queries_to_json.py:5:0: W0611: Unused pandas imported as pd (unused-import)"
+   ],
+   "score": 75.0
+  },
+  {
+   "file_name": "./lambda reports/daily_report_queries_to_html.py",
+   "errors": [
+    "lambda reports/daily_report_queries_to_html.py:82:0: C0301: Line too long (190/150) (line-too-long)",
+    "lambda reports/daily_report_queries_to_html.py:185:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)",
+    "lambda reports/daily_report_queries_to_html.py:192:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)",
+    "lambda reports/daily_report_queries_to_html.py:2:0: W0612: Unused variable 'redshift_connector' (unused-variable)",
+    "lambda reports/daily_report_queries_to_html.py:5:0: W0612: Unused variable 'pd' (unused-variable)",
+    "lambda reports/daily_report_queries_to_html.py:169:4: W0612: Unused variable 'total_transaction_value_for_all_trucks' (unused-variable)",
+    "lambda reports/daily_report_queries_to_html.py:1:0: W0612: Unused variable 'client' (unused-variable)",
+    "lambda reports/daily_report_queries_to_html.py:3:0: W0612: Unused variable 'Connection' (unused-variable)",
+    "lambda reports/daily_report_queries_to_html.py:4:0: W0612: Unused variable 'dotenv_values' (unused-variable)",
+    "lambda reports/daily_report_queries_to_html.py:1:0: W0611: Unused client imported from boto3 (unused-import)",
+    "lambda reports/daily_report_queries_to_html.py:2:0: W0611: Unused import redshift_connector (unused-import)",
+    "lambda reports/daily_report_queries_to_html.py:3:0: W0611: Unused Connection imported from redshift_connector (unused-import)",
+    "lambda reports/daily_report_queries_to_html.py:4:0: W0611: Unused dotenv_values imported from dotenv (unused-import)",
+    "lambda reports/daily_report_queries_to_html.py:5:0: W0611: Unused pandas imported as pd (unused-import)"
+   ],
+   "score": 78.1
   }
  ],
- "average_score": 60.0
+ "average_score": 84.9
 }
