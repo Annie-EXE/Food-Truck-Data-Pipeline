@@ -1,0 +1,81 @@
+{
+    "total_transaction_value_all_trucks": [
+        48379.31
+    ],
+    "transaction-data_for_each_truck": [
+        {
+            "truck_id": 1,
+            "truck_name": "Burrito Madness",
+            "total_transaction_value": "27924.10",
+            "transaction_count": 824
+        },
+        {
+            "truck_id": 2,
+            "truck_name": "Kings of Kebabs",
+            "total_transaction_value": "12119.80",
+            "transaction_count": 407
+        },
+        {
+            "truck_id": 3,
+            "truck_name": "Cupcakes by Michelle",
+            "total_transaction_value": "1990.68",
+            "transaction_count": 134
+        },
+        {
+            "truck_id": 4,
+            "truck_name": "Hartmann's Jellied Eels",
+            "total_transaction_value": "1351.49",
+            "transaction_count": 54
+        },
+        {
+            "truck_id": 5,
+            "truck_name": "Yoghurt Heaven",
+            "total_transaction_value": "2622.70",
+            "transaction_count": 118
+        },
+        {
+            "truck_id": 6,
+            "truck_name": "SuperSmoothie",
+            "total_transaction_value": "2370.54",
+            "transaction_count": 49
+        }
+    ],
+    "avg_transaction_values_for_each_truck": [
+        {
+            "truck_id": 1,
+            "truck_name": "Burrito Madness",
+            "mean_transaction_value": "7.78",
+            "median_transaction_value": "7.00"
+        },
+        {
+            "truck_id": 2,
+            "truck_name": "Kings of Kebabs",
+            "mean_transaction_value": "7.97",
+            "median_transaction_value": "8.20"
+        },
+        {
+            "truck_id": 3,
+            "truck_name": "Cupcakes by Michelle",
+            "mean_transaction_value": "8.96",
+            "median_transaction_value": "4.99"
+        },
+        {
+            "truck_id": 4,
+            "truck_name": "Hartmann's Jellied Eels",
+            "mean_transaction_value": "25.03",
+            "median_transaction_value": "3.99"
+        },
+        {
+            "truck_id": 5,
+            "truck_name": "Yoghurt Heaven",
+            "mean_transaction_value": "5.46",
+            "median_transaction_value": "5.00"
+        },
+        {
+            "truck_id": 6,
+            "truck_name": "SuperSmoothie",
+            "mean_transaction_value": "5.95",
+            "median_transaction_value": "5.99"
+        }
+    ]
+}

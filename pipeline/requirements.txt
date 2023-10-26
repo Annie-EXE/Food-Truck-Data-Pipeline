@@ -1,0 +1,11 @@
+boto3
+openpyxl
+pandas
+redshift_connector
+python-dotenv
+pyarrow
+jupyter
+seaborn
+matplotlib
+streamlit
+

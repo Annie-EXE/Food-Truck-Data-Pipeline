@@ -1,0 +1,29 @@
+{
+ "files": [
+  {
+   "file_name": "./pipeline/load.py",
+   "errors": [
+    "pipeline/load.py:1:0: W0612: Unused variable 'redshift_connector' (unused-variable)",
+    "pipeline/load.py:1:0: W0611: Unused import redshift_connector (unused-import)"
+   ],
+   "score": 60.0
+  },
+  {
+   "file_name": "./pipeline/extract.py",
+   "errors": [
+    "pipeline/extract.py:1:0: W0612: Unused variable 'client' (unused-variable)",
+    "pipeline/extract.py:1:0: W0611: Unused client imported from boto3 (unused-import)"
+   ],
+   "score": 60.0
+  },
+  {
+   "file_name": "./pipeline/transform.py",
+   "errors": [
+    "pipeline/transform.py:1:0: W0612: Unused variable 'pd' (unused-variable)",
+    "pipeline/transform.py:1:0: W0611: Unused pandas imported as pd (unused-import)"
+   ],
+   "score": 60.0
+  }
+ ],
+ "average_score": 60.0
+}

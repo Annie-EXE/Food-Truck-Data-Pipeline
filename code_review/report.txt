@@ -1,0 +1,24 @@
+./pipeline/load.py
+************* Module load
+pipeline/load.py:1:0: W0612: Unused variable 'redshift_connector' (unused-variable)
+pipeline/load.py:1:0: W0611: Unused import redshift_connector (unused-import)
+
+-----------------------------------
+Your code has been rated at 6.00/10
+
+./pipeline/extract.py
+************* Module extract
+pipeline/extract.py:1:0: W0612: Unused variable 'client' (unused-variable)
+pipeline/extract.py:1:0: W0611: Unused client imported from boto3 (unused-import)
+
+-----------------------------------
+Your code has been rated at 6.00/10
+
+./pipeline/transform.py
+************* Module transform
+pipeline/transform.py:1:0: W0612: Unused variable 'pd' (unused-variable)
+pipeline/transform.py:1:0: W0611: Unused pandas imported as pd (unused-import)
+
+-----------------------------------
+Your code has been rated at 6.00/10
+
