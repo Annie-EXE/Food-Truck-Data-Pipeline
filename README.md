@@ -1,6 +1,3 @@
-[![badge](./.github/badges/code_quality.svg)](./code_review/report.json)
-[![badge](./.github/badges/total_errors.svg)](./code_review/report.json)
-
 # 🧑‍💻 Food Truck Data, Batch Processing Pipeline
 
 ## Pipeline
