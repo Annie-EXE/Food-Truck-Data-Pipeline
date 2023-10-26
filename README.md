@@ -43,3 +43,7 @@ DB_SCHEMA=XXX
 
 4. Running `lambda_function.py` will query the database to calculate key metrics, then use these to populate an HTML report file
 5. The `Dockerfile` can build an image of the report generation application, suitable to be deployed with AWS Lambda
+
+## Terraform
+
+The `/terraform/main.tf` file can be used to configure the AWS resources required for this project.
